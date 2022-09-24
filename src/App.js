@@ -19,6 +19,7 @@ function App() {
                 const posts = articles.sort((item1, item2) => {
                     return new Date(item2.attributes.date).getTime() - new Date(item1.attributes.date).getTime()
                 })
+                console.log(posts);
                 setArticles(posts);
             })
             .then(() => setLoading(false))

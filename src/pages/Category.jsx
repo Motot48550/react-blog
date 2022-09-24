@@ -19,7 +19,8 @@ function Category() {
         window.scrollTo({
             top: 0,
         });
-        setPosts(articles.filter(article => article.attributes.category.data.attributes.name === name));
+        const items = articles.filter(article => article.attributes.category.data.attributes.name === name)
+        setPosts(items);
     }, [articles, name])
 
     return (
@@ -31,6 +32,7 @@ function Category() {
                 <div id="page" className="home-page">
                     <div className="content">
                         <div className="article">
+                            {console.log(articles.length)}
                             {posts.length ? <LatestArticles articles={posts} page={page} setPage={setPage} itemsPegPage={itemsPegPage} /> : <div>Постов нет</div>}
                         </div>
                         <InterestingArticles categoryPage />
