@@ -53,7 +53,7 @@ function Article() {
                                                 (
                                                     <div key={content.id}>
                                                         <pre className="article-text">{content.paragraph}</pre>
-                                                        <img src={process.env.REACT_APP_SERVER_URL + img} alt="" width="399" height="270" className="aligncenter size-medium wp-image-212 article-image" />
+                                                        <img src={img} alt="" width="399" height="270" className="aligncenter size-medium wp-image-212 article-image" />
                                                     </div>
                                                 );
                                         })}

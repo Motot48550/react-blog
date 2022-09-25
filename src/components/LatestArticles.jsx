@@ -16,7 +16,7 @@ function LatestArticles({ articles, page, setPage, itemsPegPage }) {
                     <article className="post excerpt" key={article.id}>
                         <a href={'/article/' + article.attributes.slug} title={article.attributes.title} rel="nofollow" id="featured-thumbnail">
                             <div className="featured-thumbnail">
-                                <img width="220" height="162" src={process.env.REACT_APP_SERVER_URL + article.attributes.banner.data.attributes.url}
+                                <img width="220" height="162" src={article.attributes.banner.data.attributes.url}
                                     className="attachment-featured size-featured wp-post-image" id="article-image" alt="" title="" />
                             </div>
                             <div className="featured-cat">{article.attributes.category.data.attributes.name}</div>

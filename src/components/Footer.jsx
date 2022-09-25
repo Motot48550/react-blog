@@ -19,7 +19,7 @@ function Footer() {
                                 <div>
                                     <div className="hover"><i className="point-icon icon-zoom-in"></i></div>
 
-                                    <img width="140" height="130" src={process.env.REACT_APP_SERVER_URL + article.attributes.banner.data.attributes.url}
+                                    <img width="140" height="130" src={article.attributes.banner.data.attributes.url}
                                         className="attachment-carousel size-carousel wp-post-image" alt="" title="" />
                                     {/* <img width="140" height="130" src={process.env.REACT_APP_SERVER_URL + article.attributes.banner.data.attributes.url}
                                                 className="attachment-carousel size-carousel wp-post-image" alt="" title=""

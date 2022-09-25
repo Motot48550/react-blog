@@ -26,7 +26,7 @@ function RelatedArticles() {
                                     <Link rel="nofollow" className="relatedthumb related-article" to={'/article/' + article.attributes.slug}
                                         title={article.attributes.title}>
                                         <span className="rthumb">
-                                            <img width="60" height="57" src={process.env.REACT_APP_SERVER_URL + article.attributes.banner.data.attributes.url} alt=""
+                                            <img width="60" height="57" src={article.attributes.banner.data.attributes.url} alt=""
                                                 className="attachment-widgetthumb size-widgetthumb wp-post-image" />
                                         </span>
                                         <div>

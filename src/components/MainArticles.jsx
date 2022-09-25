@@ -18,7 +18,7 @@ function MainArticles({ articles }) {
                             <div className={"front-post excerpt-" + i} key={article.id}>
                                 <Link to={'/article/' + article.attributes.slug} title={articles[0].attributes.title} rel="nofollow" id="second-thumbnail">
 
-                                    <img src={process.env.REACT_APP_SERVER_URL + article.attributes.banner.data.attributes.url}
+                                    <img src={article.attributes.banner.data.attributes.url}
                                         className="attachment-mediumthumb size-mediumthumb wp-post-image" alt="" title="" />
                                     <p className="featured-excerpt">
                                         <span className="featured-title">{article.attributes.title}</span>
